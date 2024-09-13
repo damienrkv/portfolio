@@ -20,42 +20,64 @@ body {
 h1 {
     color: lightblue;
     margin-left: 20px;
+    font-size: 50px;
   }
 
 p {
     color: lightblue;
     margin-left: 20px;
+    font-size: 32px;
 }   
 
-@media only screen and (max-width: 768px) {
-    h1 {
-      font-size: 50px; /* Larger than default (16px) */
-    }
-  
-    p {
-      font-size: 32px; /* Increase paragraph font size */
-    }
-    
-    /*
-    .teko-300, .teko-500 {
-      font-size: 24px; /* Increase font for .teko classes 
-    }*/
-  
-  }
-
-
 @media (min-width: 769px) {
-  h1 {
-    font-size: 50px;
-  }
 
-  p{
-    font-size: 32px;
-  }
-
-  h1, p {
+  h1, p .container {
     text-align: center;
   }
 
 }
+
+header {
+  border-bottom: 1px solid rgb(31, 31, 31);
+}
   
+.logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+.php-button {
+  background-color: #6600ff;  
+  border: none;
+  border-radius: 10px;        /* Abgerundete Ecken */
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Leichter Schatten */
+  transition: background-color 0.3s, transform 0.1s;  /* Sanfte Übergänge */
+  text-align: center;
+}
+
+.php-button:hover {
+  background-color: #4e00b5;  /* Etwas dunkleres Blau bei Hover */
+}
+
+.php-button:active {
+  transform: scale(0.95);  /* Leichter "Klick"-Effekt */
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;  /* Horizontales Zentrieren */
+  align-items: center;      /* Vertikales Zentrieren */
+  /*height: 100vh;            /* Vollständige Höhe des Viewports */
+  
+}
